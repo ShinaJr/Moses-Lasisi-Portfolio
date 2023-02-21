@@ -8,7 +8,12 @@ import {
   FaGithubSquare,
   FaLink,
 } from "react-icons/fa";
-import { SiJavascript, SiStyledcomponents, SiRedux } from "react-icons/si";
+import {
+  SiJavascript,
+  SiStyledcomponents,
+  SiRedux,
+  SiTailwindcss,
+} from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
@@ -24,7 +29,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add your GitHub username (string - "YourUsername") below.
 */
-export const githubUsername = "Your GitHub username here";
+export const githubUsername = "ShinaJr";
 
 // Blog link icon (imported above)
 export const Blog = <FaLink />;
@@ -33,8 +38,11 @@ export const Blog = <FaLink />;
  **************************************************************
   Add a second paragraph for the about me section.
 */
-export const moreInfo =
-  "I enjoy learning about technology and helping others use it to improve their lives and be more productive. I built this site with React, Bootstrap, Redux, and the GitHub REST API.";
+export const moreInfo = `Hi there, I am Shina and I am a React native developer with a year experience in building high quality and scalable cross-platform apps leveraging the use of react native technology. I enjoy learning about the latest technologies and helping others use it to improve their lives and be more productive.`;
+export const info = `If Shina is not developing apps, you can find him watching football,learning
+    spanish, playing with new technologies and exploring the latest trends in
+    the world of technology, sports etc.
+    `;
 
 /* Skills
  ************************************************************** 
@@ -64,7 +72,7 @@ export const skillData = [
   {
     id: 5,
     skill: <FaReact className="display-4" />,
-    name: "React",
+    name: "React-Native/Expo",
   },
   {
     id: 6,
@@ -86,10 +94,16 @@ export const skillData = [
     skill: <FaGithubSquare className="display-4" />,
     name: "GitHub",
   },
+  {
+    id: 10,
+    skill: <SiTailwindcss className="display-4" />,
+    name: "Tailwind CSS",
+  },
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
+export const resume =
+  "https://drive.google.com/file/d/1w_bKNThPR5T_9fAQtVKalOy0p-UIl2IR/view?usp=sharing";
 
 /* Projects
  ************************************************************** 
@@ -110,4 +124,4 @@ export const projectCardImages = [
   Add your formspree endpoint below.
   https://formspree.io/
 */
-export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
+export const formspreeUrl = "https://formspree.io/f/mnqypdlj";
