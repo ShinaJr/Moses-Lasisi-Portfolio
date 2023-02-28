@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+// import MoreDetails from "../pages/MoreDetails";
 // Icons
 import { FaGithub } from "react-icons/fa";
+import { FcNext } from "react-icons/fc";
 // Media
 import GH from "../images/GH.svg";
 // Components
@@ -23,7 +26,22 @@ const StyledCardComponent = styled.div`
   }
 `;
 
-export default function StyledCard({ theme, image, name, description, url }) {
+export default function StyledCard({
+  theme,
+  image,
+  name,
+  description,
+  url,
+  video,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+}) {
+  const navigate = useNavigate();
   return (
     <StyledCardComponent>
       <Card bg={theme === "light" ? "white" : "dark"}>
@@ -37,6 +55,31 @@ export default function StyledCard({ theme, image, name, description, url }) {
           <Card.Title>{name}</Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
+        <Card.Footer className="text-center">
+          <Card.Link
+            onClick={() => {
+              navigate("/More-Details", {
+                state: {
+                  theme,
+                  image,
+                  name,
+                  description,
+                  video,
+                  image1,
+                  image2,
+                  image3,
+                  image4,
+                  image5,
+                  image6
+                },
+              });
+            }}
+          >
+            {"More Details "}
+            <FcNext />
+          </Card.Link>
+        </Card.Footer>
+
         <Card.Footer className="text-center">
           <Card.Link href={url}>
             {"View on GitHub "}

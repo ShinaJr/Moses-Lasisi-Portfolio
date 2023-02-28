@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 
 // Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
+// import Logo from "./images/logo.svg";
 
 // Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.jpg";
@@ -39,8 +39,7 @@ export const Blog = <FaLink />;
   Add a second paragraph for the about me section.
 */
 export const moreInfo = `Hi there, I am Shina and I am a React native developer with a year experience in building high quality and scalable cross-platform apps leveraging the use of react native technology. I enjoy learning about the latest technologies and helping others use it to improve their lives and be more productive.`;
-export const info = `If Shina is not developing apps, you can find him watching football,learning
-    spanish, playing with new technologies and exploring the latest trends in
+export const info = `If Shina is not developing apps, you can find him watching football,learning new languages, playing with new technologies and exploring the latest trends in
     the world of technology, sports etc.
     `;
 
@@ -109,15 +108,84 @@ export const resume =
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["example-1", "example-2", "example-3"];
+export const filteredProjects = [
+  "deliveroo-clone",
+  "Pelia",
+  "SuperFoods",
+  "NFT_APP",
+];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 13-14)
 export const projectCardImages = [
   {
-    name: "example-1",
-    image: Logo,
+    name: "deliveroo-clone",
+    image: require("./images/Deliveroo1.jpg"),
+    image1: require("./images/Deliveroo2.jpg"),
+    image2: require("./images/Deliveroo3.jpg"),
+    image3: require("./images/Deliveroo4.jpg"),
+    image4: require("./images/Deliveroo6.jpg"),
+    image5: require("./images/Deliveroo5.jpg"),
+    video: require("./videos/deliverooVid.mp4"),
+  },
+  {
+    name: "Pelia",
+    image: require("./images/Pelia1.jpg"),
+    image1: require("./images/Pelia2.jpg"),
+    image2: require("./images/Pelia3.jpg"),
+    image3: require("./images/Pelia4.jpg"),
+    image4: require("./images/Pelia6.jpg"),
+    image5: require("./images/Pelia7.jpg"),
+    image6: require("./images/Pelia8.jpg"),
+    video: require("./videos/peliaVid.mp4"),
+  },
+  {
+    name: "SuperFoods",
+    image: require("./images/SF1.jpg"),
+    image1: require("./images/SF2.jpg"),
+    image2: require("./images/SF1.jpg"),
+  },
+  {
+    name: "NFT_APP",
+    image: require("./images/NFT1.jpg"),
+    image1: require("./images/NFT1.jpg"),
+    image2: require("./images/NFT2.jpg"),
+    video: require("./videos/nftVid.mp4"),
   },
 ];
+//images for project features for matching repo below
+// export const projectFeaturesImages = [
+//   {
+//     name: "deliveroo-clone",
+//     image1: require("./images/Deliveroo2.jpg"),
+//     image2: require("./images/Deliveroo3.jpg"),
+//     image3: require("./images/Deliveroo4.jpg"),
+//     image4: require("./images/Deliveroo5.jpg"),
+//     image5: require("./images/Deliveroo6.jpg"),
+//     video: require("./videos/deliverooVid.mp4"),
+//   },
+//   {
+//     name: "Pelia",
+//     image1: require("./images/Pelia2.jpg"),
+//     image2: require("./images/Pelia3.jpg"),
+//     image3: require("./images/Pelia4.jpg"),
+//     image4: require("./images/Pelia5.jpg"),
+//     image5: require("./images/Pelia6.jpg"),
+//     image6: require("./images/Pelia7.jpg"),
+//     image7: require("./images/Pelia8.jpg"),
+//     video: require("./videos/peliaVid.mp4"),
+//   },
+//   {
+//     name: "SuperFoods",
+//     image1: require("./images/SF1.jpg"),
+//     image2: require("./images/SF2.jpg"),
+//   },
+//   {
+//     name: "NFT_APP",
+//     image1: require("./images/NFT1.jpg"),
+//     image2: require("./images/NFT2.jpg"),
+//     video: require("./videos/nftVid.mp4"),
+//   },
+// ];
 
 /* Contact Info
  ************************************************************** 

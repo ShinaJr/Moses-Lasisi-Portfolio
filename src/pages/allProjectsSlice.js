@@ -1,6 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // Data
-import { githubUsername, projectCardImages } from "../data";
+import {
+  githubUsername,
+  projectCardImages,
+  projectFeaturesImages,
+} from "../data";
 
 const initialState = {
   error: "",
@@ -46,10 +50,37 @@ export const allProjectsSlice = createSlice({
           state.data.forEach((el, i) => {
             if (element.name.toLowerCase() === el.name.toLowerCase()) {
               el.image = element.image;
+              el.image1 = element.image1;
+              el.image2 = element.image2;
+              el.image3 = element.image3;
+              el.image4 = element.image4;
+              el.image5 = element.image5;
+              el.image6 = element.image6;
+              el.image7 = element.image7;
+              el.video = element.video;
+
             }
           });
         });
       })
+      // .addCase(fetchGitHubReops.fulfilled, (state, action) => {
+      //   state.isLoading = false;
+      //   state.data = action.payload;
+      //   projectFeaturesImages.forEach(function (element) {
+      //     state.data.forEach((el, i) => {
+      //       if (element.name.toLowerCase() === el.name.toLowerCase()) {
+      //         el.image1 = element.image1;
+      //         el.image2 = element.image2;
+      //         el.image3 = element.image3;
+      //         el.image4 = element.image4;
+      //         el.image5 = element.image5;
+      //         el.image6 = element.image6;
+      //         el.image7 = element.image7;
+      //         el.video = element.video;
+      //       }
+      //     });
+      //   });
+      // })
       .addCase(fetchGitHubReops.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload;

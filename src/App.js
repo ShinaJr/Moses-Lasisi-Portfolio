@@ -18,6 +18,7 @@ import GlobalStyles from "./components/GlobalStyles";
 import Home from "./pages/Home";
 import AllProjects from "./pages/AllProjects";
 import NotFound from "./pages/NotFound";
+import MoreDetails from "./pages/MoreDetails";
 
 const darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const themes = {
@@ -84,6 +85,7 @@ export default function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/All-Projects" element={<AllProjects />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/More-Details" element={<MoreDetails  />} />
           </Routes>
         </ThemeProvider>
       </HashRouter>

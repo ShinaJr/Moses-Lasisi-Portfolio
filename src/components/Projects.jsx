@@ -72,6 +72,14 @@ export default function Projects() {
                 {mainProjects.map(function ({
                   id,
                   image,
+                  image1,
+                  image2,
+                  image3,
+                  image4,
+                  image5,
+                  image6,
+                  image7,
+                  video,
                   name,
                   description,
                   html_url,
@@ -84,12 +92,21 @@ export default function Projects() {
                         name={name}
                         description={description}
                         url={html_url}
+                        video={video}
+                        image1={image1}
+                        image2={image2}
+                        image3={image3}
+                        image4={image4}
+                        image5={image5}
+                        image6={image6}
+                        image7={image7}
                       />
                     </Col>
                   );
                 })}
               </Row>
-              {data.length > 3 && (
+              {/* I changed the data.length > 3 to data.length < 3 in order to stop displaying all the github project button */}
+              {data.length < 3 && (
                 <Container className="text-center mt-5">
                   <Link to="/All-Projects">
                     <Button
