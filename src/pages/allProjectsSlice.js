@@ -3,7 +3,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {
   githubUsername,
   projectCardImages,
-  projectFeaturesImages,
 } from "../data";
 
 const initialState = {
